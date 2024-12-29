@@ -1,1 +1,18 @@
 Bu proje Proxy Tasarım Desenini alt basliklar halinde anlatmaktadir. Her alt baslik icin proje "pacgake" 'ına giderek kod/aciklama/UML verilerine erisilebilir.
+
+
+Proxy Tasarım Deseni, bir nesneye erişimi kontrol etmek veya onu değiştirmek için bir vekil nesne (proxy) kullanmayı amaçlayan yapısal bir tasarım desenidir. Proxy, gerçek nesneye olan istemci erişimini kontrol eder ve gerektiğinde nesneyi başlatır veya bazı davranışları yönetir.
+
+Proxy tasarım deseni genellikle şu durumlarda kullanılır:
+
+	Koruyucu Proxy: Erişim yetkilerini kontrol etmek için.
+    Sanal Proxy: Büyük veya maliyetli nesneleri yalnızca gerektiğinde yüklemek için.
+    Uzak Proxy: Uzaktaki bir nesneyi yerel olarak temsil etmek için.
+    Önbellek Proxy: Verileri geçici olarak saklamak ve performansı artırmak için.
+
+Proxy Tasarım Deseninin Avantajları:
+
+    Nesneye olan erişimi kontrol eder.
+    Nesnenin başlatılmasını geciktirir (lazy initialization).
+    Güvenlik ve erişim kontrol mekanizmaları ekleyebilir.
+    Performansı artırabilir.
