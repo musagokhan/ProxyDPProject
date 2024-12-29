@@ -1,0 +1,1 @@
+Bu proje Proxy Tasarım Desenini alt basliklar halinde anlatmaktadir. Her alt baslik icin proje "pacgake" 'ına giderek kod/aciklama/UML verilerine erisilebilir.

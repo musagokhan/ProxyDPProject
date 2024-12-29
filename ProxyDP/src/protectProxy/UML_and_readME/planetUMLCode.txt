@@ -1,0 +1,35 @@
+@startuml
+interface IBoss {
+    + listen(): String
+}
+
+class RealBoss implements IBoss {
+    + developVision(): String
+    + listen(): String
+    - listenDecision(niceDecision: boolean): String
+}
+
+class ProxyBoss implements IBoss {
+    - isAuthorized: boolean
+    - realBoss: RealBoss
+    + ProxyBoss(isAuthorized: boolean)
+    + listen(): String
+}
+
+class ManagerProtectProxy {
+    + standartWork(): void
+}
+
+class MainWork {
+    + main(args: String[]): void
+}
+
+IBoss <|-- RealBoss
+IBoss <|-- ProxyBoss
+ManagerProtectProxy o-- ProxyBoss
+ManagerProtectProxy o-- RealBoss
+MainWork o-- ManagerProtectProxy
+
+' ProxyBoss kullanarak RealBoss'a erişiyor
+ProxyBoss ..> RealBoss : uses
+@enduml
